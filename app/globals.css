@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
+@theme {
+  --color-verde-sentido: #2D6A3F;
+  --color-amarillo-mente: #F5E47A;
+  --color-verde-claro: #EAF4EC;
+  --color-blanco: #FFFFFF;
+  --color-gris-suave: #F4F4F4;
+  --color-gris-texto: #333333;
+
+  --font-montserrat: var(--font-montserrat-var), sans-serif;
+  --font-lato: var(--font-lato-var), sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --verde-sentido: #2D6A3F;
+  --amarillo-mente: #F5E47A;
+  --verde-claro: #EAF4EC;
+  --blanco: #FFFFFF;
+  --gris-suave: #F4F4F4;
+  --gris-texto: #333333;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #D1D5DB;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+  color: #333;
+  background: white;
+  font-family: var(--font-lato-var), sans-serif;
+}
+
+.form-input:focus {
+  border-color: #2D6A3F;
+}
+
+.form-input.error {
+  border-color: #E74C3C;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lato-var), Lato, sans-serif;
+  color: var(--gris-texto);
+  background: var(--blanco);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat-var), Montserrat, sans-serif;
 }
