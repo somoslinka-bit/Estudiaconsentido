@@ -77,10 +77,37 @@ const faqs = [
 function SectionHero() {
   return (
     <section
-      className="min-h-screen flex items-center pt-20"
+      className="min-h-screen flex items-center pt-20 relative overflow-hidden"
       style={{ backgroundColor: "#2D6A3F" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full">
+      {/* Video de fondo */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ zIndex: 0 }}
+      >
+        <source src="/video-hero.mp4" type="video/mp4" />
+      </video>
+
+      {/* Overlay verde para mantener identidad de marca */}
+      <div
+        className="absolute inset-0"
+        style={{ backgroundColor: "rgba(45, 106, 63, 0.68)", zIndex: 1 }}
+      />
+
+      {/* Gradiente inferior: disuelve el hero hacia la sección blanca */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none"
+        style={{
+          background: "linear-gradient(to bottom, transparent 0%, #ffffff 100%)",
+          zIndex: 2,
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full relative" style={{ zIndex: 3 }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Texto */}
           <div className="space-y-6">
