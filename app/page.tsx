@@ -126,7 +126,10 @@ function SectionHero() {
             </span>
             <h1
               className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight"
-              style={{ fontFamily: "var(--font-montserrat-var), sans-serif" }}
+              style={{
+                fontFamily: "var(--font-montserrat-var), sans-serif",
+                textShadow: "0 2px 4px rgba(0,0,0,0.5), 0 4px 24px rgba(0,0,0,0.4)",
+              }}
             >
               Estudiar tiene sentido{" "}
               <br className="hidden sm:block" />
