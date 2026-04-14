@@ -320,20 +320,8 @@ function SectionTecnicas() {
             className="text-3xl sm:text-4xl font-bold text-white mb-4"
             style={{ fontFamily: "var(--font-montserrat-var), sans-serif" }}
           >
-            Técnicas que vas a aprender
+            Algunas de las técnicas que vas a aprender
           </h2>
-          <p
-            className="text-lg text-white/70 max-w-2xl mx-auto"
-            style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
-          >
-            Cada técnica está elegida por su efectividad comprobada y adaptada a tu nivel.
-          </p>
-          <p
-            className="text-sm text-white/50 mt-3"
-            style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
-          >
-            Acá hay algunas de las técnicas que trabajo. No están todas.
-          </p>
         </FadeIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
