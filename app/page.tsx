@@ -60,14 +60,14 @@ const tecnicasPreview = [
 const testimonios = [
   { nombre: "Lucía M.", nivel: "Universitaria · Derecho", texto: "Antes perdía horas estudiando sin resultados. Con María Paz aprendí a usar mapas conceptuales y el método Feynman. Aprobé Constitucional con el mejor promedio de mi historia.", stars: 5 },
   { nombre: "Mateo G.", nivel: "Secundario · 5to año", texto: "No sabía cómo organizar el tiempo antes de los exámenes. La técnica Pomodoro me cambió la vida. Ahora estudio menos tiempo y rindo mucho mejor.", stars: 5 },
-  { nombre: "Valentina R.", nivel: "Terciaria · Enfermería", texto: "Las sesiones son súper personalizadas. No es un curso genérico, es trabajo real con tus materias y tus dificultades específicas. Lo recomiendo a todos.", stars: 5 },
-  { nombre: "Pablo S.", nivel: "Universitario · Ingeniería", texto: "El cuadro comparativo para Análisis Matemático me pareció increíble. Nunca había entendido tan bien la diferencia entre conceptos hasta que lo visualicé.", stars: 5 },
+  { nombre: "Valentina R.", nivel: "Superior · Enfermería", texto: "Las sesiones son súper personalizadas. No es un curso genérico, es trabajo real con tus materias y tus dificultades específicas. Lo recomiendo a todos.", stars: 5 },
+  { nombre: "Pablo S.", nivel: "Superior · Ingeniería", texto: "El cuadro comparativo para Análisis Matemático me pareció increíble. Nunca había entendido tan bien la diferencia entre conceptos hasta que lo visualicé.", stars: 5 },
 ]
 
 const faqs = [
   { pregunta: "¿Cuánto dura cada sesión?", respuesta: "Las sesiones tienen una duración de 60 minutos. En algunos casos, especialmente al principio, podemos extendernos un poco más para el diagnóstico inicial sin costo adicional." },
   { pregunta: "¿Trabajamos de forma presencial u online?", respuesta: "Trabajo en ambas modalidades. Las sesiones presenciales son en un espacio cómodo y tranquilo. Las sesiones online se realizan vía videollamada con materiales digitales compartidos en pantalla." },
-  { pregunta: "¿A partir de qué edad trabajás?", respuesta: "Trabajo principalmente con estudiantes de secundaria, terciario y universidad, desde los 13 años en adelante. Para estudiantes de primaria mayores podemos evaluar el caso." },
+  { pregunta: "¿A partir de qué edad trabajás?", respuesta: "Trabajo con estudiantes de primaria, secundaria y nivel superior (universitario y terciario). Podés contactarme para evaluar el caso de tu hijo/a o consultarme directamente si sos estudiante." },
   { pregunta: "¿Cuántas sesiones se necesitan para ver resultados?", respuesta: "Depende de cada estudiante, pero la mayoría nota mejoras concretas a partir de la tercera o cuarta sesión. Para un cambio de hábitos más profundo, recomiendo un proceso de 8 a 12 sesiones." },
   { pregunta: "¿Cómo agendo una consulta inicial?", respuesta: "Podés contactarme directamente por WhatsApp o a través del formulario de contacto en esta página. La primera consulta es sin cargo y dura aproximadamente 30 minutos." },
   { pregunta: "¿Las sesiones son individuales o grupales?", respuesta: "La mayoría de las sesiones son individuales para poder personalizar el trabajo. También ofrezco talleres grupales para instituciones educativas. Consultame para más información." },
@@ -413,6 +413,17 @@ function SectionNiveles() {
 
   const niveles = [
     {
+      label: "Primario",
+      titulo: "Estudiantes de primaria",
+      incluye: [
+        "Primeros hábitos de estudio y organización",
+        "Técnicas básicas de lectura y comprensión",
+        "Cómo repasar y memorizar de forma efectiva",
+        "Concentración y manejo del tiempo de estudio",
+      ],
+      idealPara: "Estudiantes de los últimos años de primaria que quieren empezar a construir hábitos de estudio sólidos desde temprano.",
+    },
+    {
       label: "Secundario",
       titulo: "Estudiantes de secundaria",
       incluye: [
@@ -424,19 +435,8 @@ function SectionNiveles() {
       idealPara: "Estudiantes de 1er a 5to año que quieren mejorar su rendimiento o aprovechar mejor el tiempo.",
     },
     {
-      label: "Terciario",
-      titulo: "Estudiantes terciarios",
-      incluye: [
-        "Método Feynman para contenidos técnicos",
-        "Cuadros comparativos y mapas conceptuales",
-        "Gestión del tiempo con carga horaria alta",
-        "Estrategias para rendir finales y parciales",
-      ],
-      idealPara: "Estudiantes de carreras docentes, enfermería, diseño o técnicas que manejan mucho contenido.",
-    },
-    {
-      label: "Universitario",
-      titulo: "Estudiantes universitarios",
+      label: "Superior",
+      titulo: "Estudiantes de nivel superior",
       incluye: [
         "Comprensión y análisis de textos académicos complejos",
         "Técnicas de síntesis y esquematización de contenido extenso",
@@ -447,7 +447,7 @@ function SectionNiveles() {
         "Trabajo, vida y estudio en equilibrio",
         "Inteligencia artificial para el estudio universitario",
       ],
-      idealPara: "Estudiantes universitarios en cualquier carrera que quieran rendir mejor sin estudiar el doble.",
+      idealPara: "Estudiantes universitarios y terciarios en cualquier carrera que quieran rendir mejor sin estudiar el doble.",
     },
   ]
 

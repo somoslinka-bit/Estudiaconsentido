@@ -5,15 +5,32 @@ import { BookOpen, GraduationCap, School } from "lucide-react"
 export const metadata: Metadata = {
   title: "Niveles | Estudia con Sentido",
   description:
-    "Trabajo con estudiantes de secundaria, terciario y universidad. Cada nivel tiene un enfoque personalizado según las necesidades de esa etapa educativa.",
+    "Trabajo con estudiantes de primaria, secundaria y nivel superior. Cada nivel tiene un enfoque personalizado según las necesidades de esa etapa educativa.",
   openGraph: {
     title: "Niveles | Estudia con Sentido",
     description:
-      "Secundaria, terciario y universidad. Técnicas de estudio adaptadas a cada nivel educativo.",
+      "Primaria, secundaria y nivel superior. Técnicas de estudio adaptadas a cada nivel educativo.",
   },
 }
 
 const niveles = [
+  {
+    id: "primario",
+    icon: BookOpen,
+    label: "Primario",
+    titulo: "Estudiantes de primaria",
+    intro: "La primaria es donde todo empieza. Construir buenos hábitos desde esta etapa hace una diferencia enorme en el rendimiento futuro. Se trabaja con técnicas simples, concretas y adaptadas a la edad.",
+    queTrabajamos: [
+      "Primeros hábitos de estudio y organización del espacio",
+      "Técnicas básicas de lectura y comprensión de textos",
+      "Cómo repasar y memorizar de forma efectiva",
+      "Concentración y manejo del tiempo de estudio",
+      "Cómo preparar evaluaciones sin bloquearse",
+      "Técnica Pomodoro adaptada para chicos",
+    ],
+    idealPara: "Estudiantes de los últimos años de primaria (4to a 7mo grado) que quieren empezar a construir hábitos de estudio sólidos desde temprano, con acompañamiento personalizado.",
+    frase: "\"Nunca había pensado que se podía enseñar a estudiar desde chico. El cambio fue increíble desde las primeras sesiones.\"",
+  },
   {
     id: "secundario",
     icon: School,
@@ -23,7 +40,7 @@ const niveles = [
     queTrabajamos: [
       "Lectura comprensiva y subrayado con criterio",
       "Organización del tiempo de estudio semanal",
-      "Técnicas para preparar exámenes escritos y orales",
+      "Cómo manejar el estrés pre-evaluación",
       "Construcción de hábitos de estudio desde cero",
       "Manejo de la ansiedad ante los exámenes",
       "Técnica Pomodoro para mejorar la concentración",
@@ -32,28 +49,11 @@ const niveles = [
     frase: "\"Antes estudiaba horas sin resultados. Ahora estudio menos tiempo y entiendo mucho más.\"",
   },
   {
-    id: "terciario",
-    icon: BookOpen,
-    label: "Terciario",
-    titulo: "Estudiantes terciarios",
-    intro: "El nivel terciario exige manejar grandes volúmenes de contenido con una carga horaria muy alta. Las técnicas que funcionan en la secundaria ya no alcanzan: necesitás estrategias más avanzadas.",
-    queTrabajamos: [
-      "Método Feynman para contenidos técnicos complejos",
-      "Cuadros comparativos para diferenciar conceptos similares",
-      "Mapas conceptuales para materias con mucho contenido teórico",
-      "Gestión del tiempo con carga horaria alta y múltiples materias",
-      "Estrategias para rendir finales y parciales bajo presión",
-      "Lectura eficiente de textos académicos y técnicos",
-    ],
-    idealPara: "Estudiantes de carreras docentes, enfermería, diseño, tecnicaturas y cualquier carrera terciaria que maneje mucho contenido y necesite organizar mejor su proceso de aprendizaje.",
-    frase: "\"En la tecnicatura el contenido es enorme. Aprendí a seleccionar lo importante y a estudiar de forma mucho más eficiente.\"",
-  },
-  {
-    id: "universitario",
+    id: "superior",
     icon: GraduationCap,
-    label: "Universitario",
-    titulo: "Estudiantes universitarios",
-    intro: "La universidad exige autonomía, trabajo con bibliografía extensa y capacidad para sintetizar información compleja. Es un nivel donde el método de estudio puede hacer una diferencia enorme.",
+    label: "Superior",
+    titulo: "Estudiantes de nivel superior",
+    intro: "El nivel superior —universitario y terciario— exige autonomía, trabajo con bibliografía extensa y capacidad para sintetizar información compleja. El método de estudio puede hacer una diferencia enorme.",
     queTrabajamos: [
       "Comprensión y análisis de textos académicos complejos",
       "Técnicas de síntesis y esquematización de contenido extenso",
@@ -61,8 +61,10 @@ const niveles = [
       "Trabajo con múltiples fuentes y bibliografía extensa",
       "Preparación para exposiciones orales y defensas",
       "Gestión del tiempo en carreras con alta carga académica",
+      "Trabajo, vida y estudio en equilibrio",
+      "Inteligencia artificial para el estudio universitario",
     ],
-    idealPara: "Estudiantes universitarios de cualquier carrera —exactas, humanidades, ciencias de la salud, ciencias sociales— que quieren mejorar su rendimiento académico sin tener que estudiar el doble.",
+    idealPara: "Estudiantes universitarios y terciarios de cualquier carrera —exactas, humanidades, ciencias de la salud, diseño, docencia— que quieren rendir mejor sin tener que estudiar el doble.",
     frase: "\"Llegué a la facultad creyendo que era malo estudiando. Resultó que simplemente no tenía las herramientas correctas.\"",
   },
 ]

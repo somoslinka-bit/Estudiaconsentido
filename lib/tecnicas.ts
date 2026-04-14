@@ -27,7 +27,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "En un capítulo de historia sobre la Revolución Francesa, subrayás las causas, los principales actores y las consecuencias. Luego escribís un párrafo propio que conecta esos puntos sin mirar el libro.",
-    nivelIdeal: "Secundario y universitario",
+    nivelIdeal: "Secundario y superior",
     keywords: ["subrayado", "resumen", "técnicas de estudio", "comprensión lectora"],
   },
   {
@@ -46,7 +46,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "Para estudiar el sistema circulatorio, el concepto central es 'corazón'. De ahí se desprenden: arterias, venas, capilares, sangre, oxígeno. Cada uno se conecta con palabras como 'transporta', 'lleva', 'filtra'.",
-    nivelIdeal: "Secundario, terciario y universitario",
+    nivelIdeal: "Secundario y superior",
     keywords: ["mapa conceptual", "organización visual", "relaciones conceptuales", "técnicas de estudio"],
   },
   {
@@ -65,7 +65,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "Para estudiar la Segunda Guerra Mundial, trazás una línea desde 1939 hasta 1945. Marcás los hitos clave: invasión de Polonia, caída de Francia, ataque a Pearl Harbor, Día D, bombas atómicas, rendición.",
-    nivelIdeal: "Secundario y terciario",
+    nivelIdeal: "Secundario y superior",
     keywords: ["línea de tiempo", "historia", "cronología", "técnicas de estudio"],
   },
   {
@@ -84,7 +84,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "Estudiando química: escribís en una tarjeta '¿Cuál es la fórmula del agua?' y en el reverso 'H₂O'. Después de repasar todas las tarjetas, te quedás solo con las que contestaste mal.",
-    nivelIdeal: "Secundario, terciario y universitario",
+    nivelIdeal: "Secundario y superior",
     keywords: ["pregunta y respuesta", "flashcards", "auto-evaluación", "técnicas de estudio"],
   },
   {
@@ -103,7 +103,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "Para preparar un parcial, dividís el material: Pomodoro 1 → lectura del capítulo 1, Pomodoro 2 → resumen del capítulo 1, Pomodoro 3 → lectura del capítulo 2, y así. Al final del día tenés bloques concretos terminados.",
-    nivelIdeal: "Secundario, terciario y universitario",
+    nivelIdeal: "Primario, secundario y superior",
     keywords: ["técnica pomodoro", "gestión del tiempo", "concentración", "productividad", "técnicas de estudio"],
   },
   {
@@ -122,7 +122,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "Intentás explicar la fotosíntesis. Te trabás en 'clorofila'. Volvés al libro, entendés que la clorofila es el pigmento que captura la luz solar. Ahora podés decir: 'las plantas tienen un ingrediente especial que atrapa la luz del sol como una esponja'.",
-    nivelIdeal: "Terciario y universitario",
+    nivelIdeal: "Superior",
     keywords: ["método feynman", "comprensión profunda", "explicar para aprender", "técnicas de estudio"],
   },
   {
@@ -141,7 +141,7 @@ export const tecnicas: Tecnica[] = [
     ],
     ejemploPractico:
       "Para estudiar distintas corrientes psicológicas (conductismo, cognitivismo, humanismo), hacés una tabla con columnas para cada corriente y filas para: fundador, concepto central, método, aplicación práctica.",
-    nivelIdeal: "Secundario, terciario y universitario",
+    nivelIdeal: "Secundario y superior",
     keywords: ["cuadro comparativo", "tabla", "comparación", "organización", "técnicas de estudio"],
   },
 ]
