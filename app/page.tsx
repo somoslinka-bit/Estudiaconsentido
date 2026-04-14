@@ -107,105 +107,74 @@ function SectionHero() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full relative" style={{ zIndex: 3 }}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Texto */}
-          <div className="space-y-6">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <span
-                className="inline-block px-4 py-1.5 rounded-full text-sm font-bold mb-4"
-                style={{
-                  backgroundColor: "rgba(245,228,122,0.2)",
-                  color: "#F5E47A",
-                  fontFamily: "var(--font-montserrat-var), sans-serif",
-                }}
-              >
-                Aprendé a estudiar
-              </span>
-              <h1
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
-                style={{ fontFamily: "var(--font-montserrat-var), sans-serif" }}
-              >
-                Estudiar tiene sentido cuando{" "}
-                <span style={{ color: "#F5E47A" }}>sabés cómo</span>
-              </h1>
-            </motion.div>
-
-            <motion.p
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.15 }}
-              className="text-lg text-white/80 leading-relaxed max-w-xl"
-              style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
-            >
-              Técnicas de estudio probadas para estudiantes de primaria, secundaria y superior. Presencial y online.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <Link
-                href="/tecnicas"
-                className="inline-flex items-center justify-center px-7 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:opacity-90 active:scale-95"
-                style={{
-                  backgroundColor: "#F5E47A",
-                  color: "#2D6A3F",
-                  fontFamily: "var(--font-montserrat-var), sans-serif",
-                }}
-              >
-                Conocé las técnicas
-              </Link>
-              <a
-                href="https://wa.me/5492494351282"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-7 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-white/10 active:scale-95 border-2"
-                style={{
-                  borderColor: "rgba(255,255,255,0.6)",
-                  color: "#fff",
-                  fontFamily: "var(--font-montserrat-var), sans-serif",
-                }}
-              >
-                Hablame por WhatsApp
-              </a>
-            </motion.div>
-          </div>
-
-          {/* Logo hero */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 w-full relative text-center" style={{ zIndex: 3 }}>
+        <div className="space-y-8">
           <motion.div
-            initial={{ opacity: 0, scale: 0.88, y: 16 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
-            className="hidden lg:flex items-center justify-center"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
           >
-            <div className="relative w-full max-w-sm xl:max-w-md flex items-center justify-center">
-              {/* Halo de profundidad detrás del logo */}
-              <div
-                className="absolute inset-0 rounded-full scale-75 blur-3xl"
-                style={{ background: "radial-gradient(circle, rgba(245,228,122,0.18) 0%, transparent 70%)" }}
-              />
-              {/* Anillo decorativo exterior */}
-              <div
-                className="absolute inset-4 rounded-full opacity-20 border"
-                style={{ borderColor: "#F5E47A" }}
-              />
-              <Image
-                src="/logo.png"
-                alt="Logo Estudia con Sentido"
-                width={420}
-                height={420}
-                priority
-                className="relative z-10 w-full h-auto select-none"
-                style={{ filter: "drop-shadow(0 8px 48px rgba(245,228,122,0.25)) drop-shadow(0 2px 12px rgba(0,0,0,0.3))" }}
-              />
-            </div>
+            <span
+              className="inline-block px-4 py-1.5 rounded-full text-sm font-bold mb-6"
+              style={{
+                backgroundColor: "rgba(245,228,122,0.2)",
+                color: "#F5E47A",
+                fontFamily: "var(--font-montserrat-var), sans-serif",
+              }}
+            >
+              Aprendé a estudiar
+            </span>
+            <h1
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight"
+              style={{ fontFamily: "var(--font-montserrat-var), sans-serif" }}
+            >
+              Estudiar tiene sentido{" "}
+              <br className="hidden sm:block" />
+              cuando{" "}
+              <span style={{ color: "#F5E47A" }}>sabés cómo</span>
+            </h1>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto"
+            style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
+          >
+            Técnicas de estudio probadas para estudiantes de primaria, secundaria y superior. Presencial y online.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <Link
+              href="/tecnicas"
+              className="inline-flex items-center justify-center px-7 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:opacity-90 active:scale-95"
+              style={{
+                backgroundColor: "#F5E47A",
+                color: "#2D6A3F",
+                fontFamily: "var(--font-montserrat-var), sans-serif",
+              }}
+            >
+              Conocé las técnicas
+            </Link>
+            <a
+              href="https://wa.me/5492494351282"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-7 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-white/10 active:scale-95 border-2"
+              style={{
+                borderColor: "rgba(255,255,255,0.6)",
+                color: "#fff",
+                fontFamily: "var(--font-montserrat-var), sans-serif",
+              }}
+            >
+              Hablame por WhatsApp
+            </a>
           </motion.div>
         </div>
       </div>
