@@ -23,7 +23,7 @@ export const tecnicas: Tecnica[] = [
       "Leé el texto completo una vez sin subrayar, solo para entender el sentido general.",
       "En la segunda lectura, subrayá únicamente las ideas principales (no más del 20% del texto).",
       "Identificá palabras clave y conceptos centrales con un color diferente.",
-      "Con el texto tapado, escribí un resumen en tus propias palabras usando las ideas subrayadas.",
+      "Con el texto tapado, escribí con tus propias palabras un resumen usando las ideas subrayadas, sin copiar frases del texto.",
     ],
     ejemploPractico:
       "En un capítulo de historia sobre la Revolución Francesa, subrayás las causas, los principales actores y las consecuencias. Luego escribís un párrafo propio que conecta esos puntos sin mirar el libro.",

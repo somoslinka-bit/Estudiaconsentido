@@ -63,20 +63,35 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-6">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200 relative group"
-                style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
-              >
-                {link.label}
-                <span
-                  className="absolute -bottom-1 left-0 h-0.5 w-0 group-hover:w-full transition-all duration-200"
-                  style={{ backgroundColor: "#F5E47A" }}
-                />
-              </Link>
-            ))}
+            {links.map((link) => {
+              const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium transition-colors duration-200 relative group"
+                  style={{
+                    fontFamily: "var(--font-lato-var), sans-serif",
+                    color: isActive ? "#F5E47A" : "rgba(255,255,255,0.9)",
+                  }}
+                >
+                  {link.label}
+                  <span
+                    className="absolute -bottom-1 left-0 h-0.5 transition-all duration-200"
+                    style={{
+                      backgroundColor: "#F5E47A",
+                      width: isActive ? "100%" : "0%",
+                    }}
+                  />
+                  {!isActive && (
+                    <span
+                      className="absolute -bottom-1 left-0 h-0.5 w-0 group-hover:w-full transition-all duration-200"
+                      style={{ backgroundColor: "rgba(245,228,122,0.5)" }}
+                    />
+                  )}
+                </Link>
+              )
+            })}
           </nav>
 
           {/* CTA + Hamburger */}
@@ -125,8 +140,12 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-colors font-medium"
-                    style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
+                    className="block px-4 py-3 hover:text-white hover:bg-white/10 rounded-lg transition-colors font-medium"
+                    style={{
+                      fontFamily: "var(--font-lato-var), sans-serif",
+                      color: (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)) ? "#F5E47A" : "rgba(255,255,255,0.9)",
+                      backgroundColor: (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)) ? "rgba(255,255,255,0.08)" : undefined,
+                    }}
                   >
                     {link.label}
                   </Link>

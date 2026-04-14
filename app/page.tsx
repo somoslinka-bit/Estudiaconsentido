@@ -97,13 +97,13 @@ function SectionHero() {
                   fontFamily: "var(--font-montserrat-var), sans-serif",
                 }}
               >
-                Aprendé a aprender
+                Aprendé a estudiar
               </span>
               <h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
                 style={{ fontFamily: "var(--font-montserrat-var), sans-serif" }}
               >
-                Aprender tiene sentido cuando{" "}
+                Estudiar tiene sentido cuando{" "}
                 <span style={{ color: "#F5E47A" }}>sabés cómo</span>
               </h1>
             </motion.div>
@@ -115,7 +115,7 @@ function SectionHero() {
               className="text-lg text-white/80 leading-relaxed max-w-xl"
               style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
             >
-              Técnicas de estudio probadas para estudiantes de secundaria, terciario y universidad. Presencial y online.
+              Técnicas de estudio probadas para estudiantes de primaria, secundaria y superior. Presencial y online.
             </motion.p>
 
             <motion.div
@@ -189,9 +189,9 @@ function SectionHero() {
 // ------- SECCIÓN 2: PROBLEMA/SOLUCIÓN -------
 function SectionProblema() {
   const cards = [
-    { problema: "Leés sin entender", solucion: "Te enseño a subrayar con criterio", icono: "📖" },
-    { problema: "No sabés organizar la información", solucion: "Mapas conceptuales que funcionan", icono: "🗺️" },
-    { problema: "Se te va el tiempo", solucion: "Técnica Pomodoro + gestión real del tiempo", icono: "⏱️" },
+    { problema: "Leés sin entender", solucion: "Te enseño a subrayar con criterio", Icono: BookOpen },
+    { problema: "No sabés organizar la información", solucion: "Mapas conceptuales que funcionan", Icono: Network },
+    { problema: "Se te va el tiempo", solucion: "Técnica Pomodoro + gestión real del tiempo", Icono: Timer },
   ]
 
   return (
@@ -219,7 +219,9 @@ function SectionProblema() {
                 className="rounded-2xl p-6 border-l-4 h-full"
                 style={{ backgroundColor: "#EAF4EC", borderLeftColor: "#2D6A3F" }}
               >
-                <div className="text-4xl mb-4">{card.icono}</div>
+                <div className="mb-4">
+                  <card.Icono size={36} color="#2D6A3F" />
+                </div>
                 <p
                   className="text-base font-bold mb-3 line-through opacity-50"
                   style={{ color: "#2D6A3F", fontFamily: "var(--font-montserrat-var), sans-serif" }}
@@ -326,6 +328,12 @@ function SectionTecnicas() {
           >
             Cada técnica está elegida por su efectividad comprobada y adaptada a tu nivel.
           </p>
+          <p
+            className="text-sm text-white/50 mt-3"
+            style={{ fontFamily: "var(--font-lato-var), sans-serif" }}
+          >
+            Acá hay algunas de las técnicas que trabajo. No están todas.
+          </p>
         </FadeIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -422,7 +430,7 @@ function SectionNiveles() {
       incluye: [
         "Técnicas de lectura comprensiva",
         "Organización del tiempo de estudio",
-        "Preparación para exámenes escritos y orales",
+        "Cómo manejar el estrés pre-evaluación",
         "Hábitos de estudio desde cero",
       ],
       idealPara: "Estudiantes de 1er a 5to año que quieren mejorar su rendimiento o aprovechar mejor el tiempo.",
@@ -442,10 +450,14 @@ function SectionNiveles() {
       label: "Universitario",
       titulo: "Estudiantes universitarios",
       incluye: [
-        "Comprensión de textos académicos complejos",
-        "Técnicas de escritura y síntesis",
-        "Planificación de períodos de exámenes",
-        "Trabajo con bibliografía extensa",
+        "Comprensión y análisis de textos académicos complejos",
+        "Técnicas de síntesis y esquematización de contenido extenso",
+        "Planificación estratégica de períodos de exámenes",
+        "Trabajo con múltiples fuentes y bibliografía extensa",
+        "Preparación para exposiciones orales y defensas",
+        "Gestión del tiempo en carreras con alta carga académica",
+        "Trabajo, vida y estudio en equilibrio",
+        "Inteligencia artificial para el estudio universitario",
       ],
       idealPara: "Estudiantes universitarios en cualquier carrera que quieran rendir mejor sin estudiar el doble.",
     },
@@ -475,7 +487,7 @@ function SectionNiveles() {
               <button
                 key={i}
                 onClick={() => setActiveTab(i)}
-                className="flex-1 py-3 font-bold text-sm transition-all duration-200"
+                className="flex-1 py-3 font-bold text-sm transition-all duration-200 cursor-pointer"
                 style={{
                   fontFamily: "var(--font-montserrat-var), sans-serif",
                   backgroundColor: activeTab === i ? "#2D6A3F" : "transparent",
